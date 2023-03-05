@@ -6,12 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="files/fontello-arrow/css/fontello.css">
     <link rel="stylesheet" href="files/fontello/css/fontello.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="header-content">
+    <div class="overlay"></div>
+    <div class="navbar-burger__menu">
+   <ul class="navbar-burger__links">
+      <li><a href="">Аксессуары к лодочным моторам</a></li>
+      <li><a href="">Лодочные аксессуары</a></li>
+      <li><a href="">Гребные винты</a>
+         <ul class="navbar-burger__links-two">
+            <li><a href="">Гребные винты</a></li>
+            <li><a href="">Гребные винты</a></li>
+            <li><a href="">Гребные винты</a></li>
+            <li><a href="">Гребные винты</a></li>
+            <li><a href="">Гребные винты</a></li>
+         </ul>
+      </li>
+      <li><a href="">Другое</a></li>
+      <li><a href="">Запчасти</a></li>
+      <li><a href="">Лодки ПВХ и аксессуары</a></li>
+      <li><a href="">Лодочные моторы</a></li>
+      <li><a href="">Мизизы(нержавеющие)</a></li>
+      <li><a href="">Прицепы, аксессуары для прицепов</a></li>
+      <li><a href="">Смазки</a></li>
+   </ul>
+</div>
+<div class="header-content">
    <section class="navbar">
       <div class="container">
          <div class="navbar-container">
@@ -21,34 +46,13 @@
                <span></span>
             </div>
             <div>
-               <div class="navbar-burger__menu">
-                  <ul class="navbar-burger__links">
-                     <li><a href="">Аксессуары к лодочным моторам</a></li>
-                     <li><a href="">Лодочные аксессуары</a></li>
-                     <li><a href="">Гребные винты</a></li>
-                     <li><a href="">Другое</a></li>
-                     <li><a href="">Запчасти</a></li>
-                     <li><a href="">Лодки ПВХ и аксессуары</a></li>
-                     <li><a href="">Лодочные моторы</a></li>
-                     <li><a href="">Мизизы(нержавеющие)</a></li>
-                     <li><a href="">Прицепы, аксессуары для прицепов</a></li>
-                     <li><a href="">Смазки</a></li>
-                  </ul>
-                  <ul class="navbar-burger__links-two">
-                     <li><a href="">Гребные винты</a></li>
-                     <li><a href="">Гребные винты</a></li>
-                     <li><a href="">Гребные винты</a></li>
-                     <li><a href="">Гребные винты</a></li>
-                     <li><a href="">Гребные винты</a></li>
-                  </ul>
-               </div>
                <div class="navbar-navigation">
                   <div class="navbar-navigation__search-container">
                      <div class="navbar-navigation__search-img">
                         <i class="icon-search"></i>
                      </div>
                      <div class="navbar-navigation__search">
-                        <input type="text">
+                        <input type="text" placeholder="Поиск">
                      </div>
                   </div>
                   <div>
@@ -98,11 +102,318 @@
             </div>
          </div>
       </div>
-
    </div>
 </div>
     <main>
-        
+        <div class="tabs">
+   <div class="container">
+      <div class="tabs__container">
+         <div data-tab="new" class="b-nav-tab active">
+            Новые поступления
+         </div>
+         <div data-tab="popular" class="b-nav-tab">
+            Популярные
+         </div>
+         <div data-tab="promotion" class="b-nav-tab">
+            Акции
+         </div>
+         <div id="new" class="b-tab active">
+            <div class="new__text">
+               <div class="new__text-container">
+
+                  <div class="new__text-flex-container">
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-social">
+                           <div class="new__text-social-title">
+                              Мы в соцсетях:
+                           </div>
+                           <div class="new__text-social-icons">
+                              <ul class="new__text-social-list">
+                                 <li><a class="new__text-social-icon" href="#"><i class="icon-vk"></i></a></li>
+                                 <li><a class="new__text-social-icon" href="#"><i class="icon-viber"></i></a></li>
+                                 <li><a class="new__text-social-icon" href="#"><i class="icon-telegram"></i></a></li>
+                                 <li><a class="new__text-social-icon" href="#"><i class="icon-insta"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="new__text-info">
+                           <div class="new__text-social-title">
+                              Полезная информация:
+                           </div>
+                           <div class="new__text-info-subtitle-container">
+                              <img src="img/checkmark.svg" alt="">
+                              <div class="new__text-info-subtitle">
+                                 О магазине
+                              </div>
+                           </div>
+                           <div class="new__text-info-txt">Узнайте больше о нашем магазине: кто мы, наши клиенты и
+                              почему они
+                              выбрали именно нас. Наши контакты и реквизиты. </div>
+                           <div class="new__text-info-button">
+                              <a class="new__text-info-btn" href="#">
+                                 <div class="new__text-info-btn-title"> Подробнее</div>
+                                 <img src="img/right-black.svg" alt="">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <div class="new__text-flex-container">
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="popular" class="b-tab">
+            <div class="new__text">
+               <div class="new__text-container">
+                  <div class="new__text-flex-container">
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                     <div class="new__text-flexbox">
+                        <div class="new__text-img">
+                           <img src="img/camera.png" alt="">
+                        </div>
+                        <div class="new__text-text">
+                           Комплект сальников Т15-15(8М0082880)
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="promotion" class="b-tab">
+            <div id="new" class="b-tab active">
+               <div class="new__promotion">
+                  <div class="new__text-container">
+                     <div class="new__text-container-title">Акция -50% </div>
+                     <div class="new__text-flex-container">
+                        <div class="new__text-flexbox">
+                           <div class="new__text-img">
+                              <img src="img/camera.png" alt="">
+                           </div>
+                           <div class="new__text-text">
+                              Комплект сальников Т15-15(8М0082880)
+                           </div>
+                        </div>
+                        <div class="new__text-flexbox">
+                           <div class="new__text-img">
+                              <img src="img/camera.png" alt="">
+                           </div>
+                           <div class="new__text-text">
+                              Комплект сальников Т15-15(8М0082880)
+                           </div>
+                        </div>
+                        <div class="new__text-flexbox">
+                           <div class="new__text-img">
+                              <img src="img/camera.png" alt="">
+                           </div>
+                           <div class="new__text-text">
+                              Комплект сальников Т15-15(8М0082880)
+                           </div>
+                        </div>
+                        <div class="new__text-flexbox">
+                           <div class="new__text-social">
+                              <div class="new__text-social-title">
+                                 Мы в соцсетях:
+                              </div>
+                              <div class="new__text-social-icons">
+                                 <ul class="new__text-social-list">
+                                    <li><a class="new__text-social-icon" href="#"><i class="icon-vk"></i></a></li>
+                                    <li><a class="new__text-social-icon" href="#"><i class="icon-viber"></i></a></li>
+                                    <li><a class="new__text-social-icon" href="#"><i class="icon-telegram"></i></a></li>
+                                    <li><a class="new__text-social-icon" href="#"><i class="icon-insta"></i></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="new__text-info">
+                              <div class="new__text-social-title">
+                                 Полезная информация:
+                              </div>
+                              <div class="new__text-info-subtitle-container">
+                                 <img src="img/checkmark.svg" alt="">
+                                 <div class="new__text-info-subtitle">
+                                    О магазине
+                                 </div>
+                              </div>
+                              <div class="new__text-info-txt">Узнайте больше о нашем магазине: кто мы, наши клиенты и
+                                 почему они
+                                 выбрали именно нас. Наши контакты и реквизиты. </div>
+                              <div class="new__text-info-button">
+                                 <a class="new__text-info-btn" href="#">
+                                    <div class="new__text-info-btn-title"> Подробнее</div>
+                                    <img src="img/right-black.svg" alt="">
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="kategori">
+   <div class="container">
+      <div class="kategori__container">
+         <!-- <div class="wrapper"> -->
+         <h2 class="kategori__title">Категории</h2>
+         <!-- Slider main container -->
+         <div class="image-slider swiper swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="image-slider__wrapper swiper-wrapper">
+               <!-- Slides -->
+               <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                     <a href="#"> <img src="img/kategori1.png" alt="image"></a>
+                  </div>
+               </div>
+               <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                     <a href="#"> <img src="img/kategori2.png" alt="image"></a>
+                  </div>
+               </div>
+               <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                     <a href="#"> <img src="img/kategori3.png" alt="image"></a>
+                  </div>
+               </div>
+               <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                     <a href="#"> <img src="img/kategori4.png" alt="image"></a>
+                  </div>
+               </div>
+               <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                     <a href="#"> <img src="img/kategori5.png" alt="image"></a>
+                  </div>
+               </div>
+               <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                     <a href="#"> <img src="img/kategori6.png" alt="image"></a>
+                  </div>
+               </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-arrows">
+               <div class="swiper-prev"><i class="icon-left-big"></i></div>
+               <div class="swiper-next"><i class="icon-right-big"></i></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="article">
+   <div class="container">
+      <div class="article__container">
+         <div class="article__title">
+            Статьи
+         </div>
+         <div class="article__flex-container">
+            <div class="article__flexbox">
+               <a class="article__card" href="#">
+                  <div class="article__card-img"><img src="img/lodka1.png" alt=""></div>
+                  <div class="article__card-title">ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ</div>
+                  <div class="article__card-text">Глиссирование является одним из самых экономичных вариантов
+                     передвижения.....</div>
+               </a>
+            </div>
+
+            <div class="article__flexbox">
+               <a class="article__card" href="#">
+                  <div class="article__card-img"><img src="img/lodka2.png" alt=""></div>
+                  <div class="article__card-title">ГЛИССИРОВАНИЕ НАДУВНЫХ ЛОДОК И ВСЁ ЧТО НУЖНО ЗНАТЬ ОБ ЭТОМ</div>
+                  <div class="article__card-text">Глиссирование является одним из самых экономичных вариантов
+                     передвижения.....</div>
+
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
     </main>
     <footer class="footer">
    <div class="container">
@@ -173,14 +484,14 @@
       <div class="container">
          <div class="footer-down-container">
             <div class="footer-scroll-top">
-               <a class="footer-scroll-top__wrap" href="#">
+               <div class="footer-scroll-top__wrap up-btn">
                   <div class="footer-scroll-top__text">
                      Наверх
                   </div>
                   <div class="footer-scroll-top__icon">
                      <i class="icon-top"></i>
                   </div>
-               </a>
+               </div>
             </div>
             <div class="footer-down__text">
                @Motorsboat, 2021
@@ -189,6 +500,8 @@
       </div>
    </div>
 </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 
