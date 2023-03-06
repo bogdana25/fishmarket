@@ -5,7 +5,8 @@ flsFunctions.isWebp();
 
 // -------------------------
 // Навбар бургер / Navbar burger
-let menuBtn = document.querySelector('.navbar-burger');
+let menuBtn = document.querySelector('.open');
+let menuBtn2 = document.querySelector('.close');
 let menu = document.querySelector('.navbar-burger__menu');
 let overlay = document.querySelector('.overlay');
 let body = document.querySelector('body');
@@ -15,12 +16,21 @@ menuBtn.addEventListener('click', function () {
    menu.classList.toggle('active');
    overlay.classList.toggle('active');
    body.classList.toggle('noscroll');
+   menuBtn2.classList.toggle('active');
+})
+menuBtn2.addEventListener('click', function () {
+   menuBtn.classList.remove('active');
+   menu.classList.remove('active');
+   overlay.classList.remove('active');
+   body.classList.remove('noscroll');
+   menuBtn2.classList.remove('active');
 })
 overlay.addEventListener('click', function () {
    menuBtn.classList.remove('active');
    menu.classList.remove('active');
    overlay.classList.remove('active');
    body.classList.remove('noscroll');
+   menuBtn2.classList.remove('active');
 })
 up.addEventListener('click', function () {
    window.scrollTo({
@@ -66,6 +76,40 @@ var connectTabs = new Tabs();
 //  Категории / Kategori
 
 new Swiper('.image-slider', {
+   slidesPerView: 3,
+   spaceBetween: 30,
+   loop: true,
+   pagination: {
+      // el: ".swiper-points",
+      clickable: true,
+   },
+   // стрелки 
+   navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+   },
+   breakpoints: {
+      0: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+      },
+
+      668: {
+         slidesPerView: 2,
+         spaceBetween: 40,
+      },
+      1024: {
+         slidesPerView: 3,
+         spaceBetween: 30,
+      },
+   },
+});
+
+
+// Свайпер / Swiper 2
+//  REVIEWS
+
+new Swiper('.rewiews-slider', {
    slidesPerView: 3,
    spaceBetween: 30,
    loop: true,

@@ -9,7 +9,7 @@
     {
       "uid": "95250d7203b07bc399f228cceb270f2e",
       "css": "vk",
-      "code": 59392,
+      "code": 59408,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -46,20 +46,6 @@
       },
       "search": [
         "user"
-      ]
-    },
-    {
-      "uid": "96a2f77c5a9f07adf46af657cb79627d",
-      "css": "top",
-      "code": 59395,
-      "src": "custom_icons",
-      "selected": true,
-      "svg": {
-        "path": "M87 107.2L152.2 43.5 217.4 107.2H152.2 87ZM152.2 1000L152.2 43.5M152.2 43.5L87 107.2H152.2 217.4L152.2 43.5Z",
-        "width": 304
-      },
-      "search": [
-        "top"
       ]
     },
     {
@@ -147,11 +133,43 @@
       ]
     },
     {
+      "uid": "555ef8c86832e686fef85f7af2eb7cde",
+      "css": "left",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ad6b3fbb5324abe71a9c0b6609cbb9f1",
+      "css": "right",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "css": "menu",
+      "code": 59400,
+      "src": "entypo"
+    },
+    {
+      "uid": "96a2f77c5a9f07adf46af657cb79627d",
+      "css": "top",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M87 107.2L152.2 43.5 217.4 107.2H152.2 87ZM152.2 1000L152.2 43.5M152.2 43.5L87 107.2H152.2 217.4L152.2 43.5Z",
+        "width": 304
+      },
+      "search": [
+        "top"
+      ]
+    },
+    {
       "uid": "781d80d47b8f910211e3b7fffe705ad7",
       "css": "right",
       "code": 59400,
       "src": "custom_icons",
-      "selected": true,
+      "selected": false,
       "svg": {
         "path": "M7093.3 200L7600 500 7093.3 800V500 200ZM0 500H7600M7600 500L7093.3 200V500 800L7600 500Z",
         "width": 7800
