@@ -111,7 +111,7 @@ new Swiper('.image-slider', {
 
 new Swiper('.rewiews-slider', {
    slidesPerView: 3,
-   spaceBetween: 30,
+   spaceBetween: 20,
    loop: true,
    pagination: {
       // el: ".swiper-points",
