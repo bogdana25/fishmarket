@@ -103,7 +103,7 @@ body {
       position: fixed;
       top: 0;
       left: 0;
-      width: 40%;
+      width: 50%;
       height: 100%;
       padding: 15px 65px;
       background: #FFFFFFE5;
@@ -119,6 +119,14 @@ body {
 
       &.active {
         transform: translateX(0);
+      }
+
+      @media (max-width: 992px) {
+        width: 80%;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
       }
     }
 
@@ -248,6 +256,7 @@ body {
       & input {
         background: transparent;
         border-bottom: 1px solid #FFFFFF;
+        color: white;
       }
 
     }
@@ -365,7 +374,7 @@ body {
   }
 
   &-subtitle {
-    width: 417px;
+    max-width: 417px;
     margin-bottom: 50px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -526,6 +535,10 @@ body {
     padding-top: 50px;
   }
 
+  @media (max-width: 479px) {
+    padding-top: 30px;
+  }
+
   &__container {
     @media(max-width: 767px) {
       text-align: center;
@@ -557,6 +570,10 @@ body {
     transition: 0.6s;
   }
 
+  @media (max-width: 479px) {
+    font-size: 25px;
+    padding: 10px;
+  }
 }
 
 .b-nav-tab.active {
@@ -566,6 +583,10 @@ body {
   /* identical to box height, or 77% */
   color: #363636;
 
+  @media (max-width: 479px) {
+    font-size: 25px;
+    padding: 10px;
+  }
 }
 
 // -------
@@ -578,6 +599,10 @@ body {
 
   @media (max-width: 767px) {
     padding: 34px 0 100px 0;
+  }
+
+  @media (max-width: 479px) {
+    padding: 20px 0 30px 0;
   }
 
 
@@ -613,9 +638,12 @@ body {
 
     & img {
       max-width: 159px;
-      height: 130px;
+      width: 100%;
     }
 
+    @media (max-width: 479px) {
+      margin-right: 0px;
+    }
   }
 
   &-text {
@@ -722,10 +750,15 @@ body {
   &__title {
     font-weight: 600;
     font-size: 40px;
-    line-height: 23px;
+    line-height: 1;
     /* identical to box height, or 58% */
     color: #363636;
     margin-bottom: 80px;
+
+    @media (max-width: 479px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -813,6 +846,10 @@ body {
     margin-bottom: 117px;
     color: #363636;
 
+    @media(max-width: 479px) {
+      font-size: 30px;
+      margin-bottom: 127px;
+    }
   }
 
   &__flex-container {
@@ -835,6 +872,11 @@ body {
       margin-bottom: 120px;
     }
 
+    @media (max-width: 479px) {
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &__card-title {
@@ -891,6 +933,10 @@ body {
 
 .planing {
   margin-bottom: 159px;
+
+  @media(max-width: 479px) {
+    margin-bottom: 59px;
+  }
 
   &__container {
     background: #50626C;
@@ -968,6 +1014,7 @@ body {
 
     @media (max-width: 479px) {
       font-size: 30px;
+      margin-bottom: 64px;
     }
   }
 
@@ -1393,6 +1440,10 @@ body {
       &:hover {
         transition: 0.5s;
         text-shadow: 2px 2px 5px #efe4e4;
+      }
+
+      @media(max-width: 479px) {
+        font-size: 16px;
       }
     }
 
