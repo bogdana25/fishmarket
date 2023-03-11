@@ -113,19 +113,45 @@
             <div class="basket__shop-card-table">
                <div class="basket__flex-container">
                   <div class="basket__flexbox">
-                     <div class="basket__shop-card-name">Изображение</div>
+                     <div class="basket__shop-card-name basket__shop-card-name-i">Изображение</div>
                      <div class="basket__shop-card-name">Название</div>
                   </div>
+
                   <div class="basket__flexbox">
                      <div class="basket__shop-card-name">Кол-во</div>
-                     <div class="basket__shop-card-name">Цена за штуку</div>
+                     <div class="basket__shop-card-name basket__shop-card-name-a">Цена за штуку</div>
                   </div>
                </div>
+
+               <!-- <div class="basket__flexbox">
+                     <div class="basket__shop-card-name">Изображение</div>
+                     <div class="basket__product-img basket__product-description">
+                        <img src="img/motor.png" alt="">
+                     </div>
+                  </div>
+
+                  <div class="basket__flexbox">
+                     <div class="basket__shop-card-name">Название</div>
+                     <div class="basket__product-text basket__product-description">Лодочный мотор HIDEA (Хайди) HD 9.9
+                        FHS
+                     </div>
+                  </div>
+
+                  <div class="basket__flexbox">
+                     <div class="basket__shop-card-name">Кол-во</div>
+                     <div class="basket__product-amount basket__product-description">1</div>
+                  </div>
+
+                  <div class="basket__flexbox">
+                     <div class="basket__shop-card-name">Цена за штуку</div>
+                     <div class="basket__product-price basket__product-description">43 400 р.</div>
+                  </div>
+               </div> -->
             </div>
             <div class="basket__product">
                <div class="basket__product-flex-container">
                   <div class="basket__product-img basket__product-description">
-                     <img src="" alt="">
+                     <img src="img/motor.png" alt="">
                   </div>
                   <div class="basket__product-text basket__product-description">Лодочный мотор HIDEA (Хайди) HD 9.9 FHS
                   </div>
@@ -162,23 +188,26 @@
                         <div class="form-customer__info-text form-info-text">Email:</div>
                         <input type="email" class="form-customer__info-input info__input-text">
                      </div>
-                     <div class="form-customer__info form-info__contain">
-                        <div class="form-customer__info-text form-info-text">Зарегистрироваться</div>
-                        <p>
-                           <input type="radio" id="registration-yes" class="form-customer__info-input"
+                     <div class="form-customer__info form-info__radio">
+                        <div class="form-customer__radio-text form-info-text">Зарегистрироваться</div>
+
+                        <div class="form-customer__input-radio-container">
+                           <input type="radio" id="registration-yes" class="form-customer__info-input info__input-radio"
                               name="registration" value="yes"><label class="form-info-text"
                               for="registration-yes">Да</label>
-                           <input type="radio" id="registration-no" class="form-customer__info-input"
+                        </div>
+                        <div class="form-customer__input-radio-container">
+                           <input type="radio" id="registration-no" class="form-customer__info-input info__input-radio"
                               name="registration" value="no"><label class="form-info-text"
                               for="registration-no">Нет</label>
-                        </p>
-                     </div>
-                     <div class="form-customer__info form-info__contain">
-                        <div class="form-customer__info-text form-info-text">Согласие на обработку персональных данных
                         </div>
-                        <div>
-                           <input type="radio" id="conditions" class="form-customer__info-input" name="registration"
-                              value="yes"><label class="form-info-text" for="conditions">Да</label>
+                     </div>
+                     <div class="form-customer__info form-info__radio">
+                        <div class=" form-customer__radio-text form-info-text">Согласие на обработку персональных данных
+                        </div>
+                        <div class="form-customer__input-radio-container">
+                           <input type="radio" id="conditions" class="form-customer__info-input info__input-radio"
+                              name="registration" value="yes"><label class="form-info-text" for="conditions">Да</label>
                         </div>
                      </div>
                   </div>
@@ -270,12 +299,14 @@
             <div class="form-comment">
                <div class="form-comment__title form-title">Комментарий</div>
                <div class="form-comment__textarea-container">
-                  <textarea name="comment" id="comment"></textarea>
+                  <textarea class="form-comment__textarea" name="comment" id="comment"></textarea>
                </div>
             </div>
             <div class="form-button__container">
-               <button type="submit">Оформить заказ</button>
-               <img src="img/right.svg" alt="">
+               <div class="form-button">
+                  <button class="form-submit" type="submit">Оформить заказ</button>
+                  <img src="img/right.svg" alt="">
+               </div>
             </div>
          </div>
       </div>

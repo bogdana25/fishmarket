@@ -1523,12 +1523,21 @@ body.noscroll {
   }
 }
 
+.basket {
+  margin: 121px 0 85px 0;
+}
 .basket__title {
   font-weight: 600;
   font-size: 40px;
-  line-height: 23px;
+  line-height: 1;
   /* identical to box height, or 58% */
   color: #363636;
+  margin-bottom: 80px;
+}
+.basket__shop-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E5E4;
+  padding: 40px 98px 60px 98px;
 }
 .basket__shop-card-table {
   border-bottom: 1px solid #50626C;
@@ -1569,21 +1578,32 @@ body.noscroll {
   /* identical to box height, or 139% */
   text-align: center;
   color: #606060;
+  margin-bottom: 25px;
+}
+.basket__shop-card-name-i {
+  margin-right: 110px;
+}
+.basket__shop-card-name-a {
+  margin-left: 60px;
 }
 .basket__flex-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .basket__flexbox {
-  width: 33%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
 }
 .basket__product-flex-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.basket__product-img img {
+  max-width: 130px;
 }
 .basket__product-description {
   font-family: "Gilroy";
@@ -1593,6 +1613,11 @@ body.noscroll {
   line-height: 23px;
   /* identical to box height, or 115% */
   color: #50626C;
+  padding: 10 20px;
+}
+.basket__product-amount {
+  padding: 10px 20px;
+  background-color: #F1F1F1;
 }
 .basket__total {
   font-family: "Montserrat";
@@ -1606,6 +1631,19 @@ body.noscroll {
 
 .form {
   margin-top: 40px;
+  margin-bottom: 66px;
+}
+.form-customer, .form-address {
+  border: 1px solid #E4E5E4;
+  background-color: #fff;
+  padding: 47px 30px 57px 34px;
+  margin-bottom: 24px;
+}
+.form-methods__info-container, .form-payment__info {
+  border: 1px solid #E4E5E4;
+  background-color: #fff;
+  padding: 47px 30px 47px 34px;
+  margin-bottom: 24px;
 }
 .form__flex-container {
   display: flex;
@@ -1632,6 +1670,7 @@ body.noscroll {
   font-size: 18px;
   line-height: 25px;
   color: #606060;
+  max-width: 232px;
 }
 .form-info__contain {
   display: flex;
@@ -1648,4 +1687,62 @@ body.noscroll {
 .form .info__input-text {
   width: 360px;
   height: 66px;
+  border: 1px solid #E4E5E4;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.form-info__radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.form .info__input-radio {
+  margin-right: 10px;
+}
+.form-customer__radio-text {
+  margin-right: 50px;
+  width: 50%;
+}
+.form-customer__input-radio-container {
+  margin-right: 50px;
+}
+.form-comment {
+  border: 1px solid #E4E5E4;
+  background-color: #fff;
+  padding: 35px;
+  margin-bottom: 40px;
+}
+.form-comment__textarea {
+  width: 100%;
+  height: 126px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #3f3d3d;
+  font-weight: 400;
+  border: 1px solid #E4E5E4;
+}
+.form-button__container {
+  display: flex;
+  justify-content: right;
+}
+.form-submit {
+  background-color: #50626C;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 34px;
+  /* identical to box height, or 227% */
+  color: #FFFFFF;
+}
+.form-button {
+  display: inline-block;
+  padding: 12px 30px 12px 42px;
+  background-color: #50626C;
+}
+.form-button img {
+  margin-top: 7px;
+  margin-left: 20px;
 }
