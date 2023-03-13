@@ -667,9 +667,14 @@ body.noscroll {
 .new__text {
   padding: 64px 0 180px 0;
 }
+@media (max-width: 992px) {
+  .new__text {
+    padding: 34px 0 80px 0;
+  }
+}
 @media (max-width: 767px) {
   .new__text {
-    padding: 34px 0 100px 0;
+    padding: 34px 0 60px 0;
   }
 }
 @media (max-width: 479px) {
@@ -812,9 +817,19 @@ body.noscroll {
   color: #363636;
   margin-bottom: 80px;
 }
+@media (max-width: 668px) {
+  .category__title {
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 479px) {
   .category__title {
     font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 668px) {
+  .category {
     margin-bottom: 30px;
   }
 }
@@ -1526,6 +1541,16 @@ body.noscroll {
 .basket {
   margin: 121px 0 85px 0;
 }
+@media (max-width: 767px) {
+  .basket {
+    margin: 50px 0 45px 0;
+  }
+}
+@media (max-width: 479px) {
+  .basket {
+    margin: 20px 0 25px 0;
+  }
+}
 .basket__title {
   font-weight: 600;
   font-size: 40px;
@@ -1534,13 +1559,37 @@ body.noscroll {
   color: #363636;
   margin-bottom: 80px;
 }
+@media (max-width: 767px) {
+  .basket__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .basket__title {
+    font-size: 25px;
+  }
+}
+.basket__total {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  color: #606060;
+  text-align: right;
+}
 .basket__shop-card {
   background-color: #FFFFFF;
   border: 1px solid #E4E5E4;
   padding: 40px 98px 60px 98px;
 }
+@media (max-width: 767px) {
+  .basket__shop-card {
+    padding: 20px;
+  }
+}
 .basket__shop-card-table {
-  border-bottom: 1px solid #50626C;
   padding-bottom: 19px;
 }
 .basket__shop-card-title {
@@ -1550,6 +1599,11 @@ body.noscroll {
   color: #606060;
   text-align: center;
   margin-bottom: 20px;
+}
+@media (max-width: 479px) {
+  .basket__shop-card-title {
+    font-size: 20px;
+  }
 }
 .basket__shop-card-subtitle {
   font-family: "Montserrat";
@@ -1562,6 +1616,11 @@ body.noscroll {
   color: #606060;
   margin-bottom: 57px;
 }
+@media (max-width: 479px) {
+  .basket__shop-card-subtitle {
+    font-size: 16px;
+  }
+}
 .basket__shop-card-subtitle span {
   font-family: "Montserrat";
   font-style: normal;
@@ -1571,62 +1630,10 @@ body.noscroll {
   text-align: center;
   color: #50626C;
 }
-.basket__shop-card-name {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  /* identical to box height, or 139% */
-  text-align: center;
-  color: #606060;
-  margin-bottom: 25px;
-}
-.basket__shop-card-name-i {
-  margin-right: 110px;
-}
-.basket__shop-card-name-a {
-  margin-left: 60px;
-}
-.basket__flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.basket__flexbox {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-}
-.basket__product-flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-.basket__product-img img {
-  max-width: 130px;
-}
-.basket__product-description {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  /* identical to box height, or 115% */
-  color: #50626C;
-  padding: 10 20px;
-}
-.basket__product-amount {
-  padding: 10px 20px;
-  background-color: #F1F1F1;
-}
-.basket__total {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 25px;
-  color: #606060;
-  text-align: right;
+@media (max-width: 479px) {
+  .basket__shop-card-subtitle span {
+    font-size: 16px;
+  }
 }
 
 .form {
@@ -1645,16 +1652,51 @@ body.noscroll {
   padding: 47px 30px 47px 34px;
   margin-bottom: 24px;
 }
+@media (max-width: 991px) {
+  .form-methods__info-container, .form-payment__info {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .form-methods__info-container, .form-payment__info {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
 .form__flex-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 991px) {
+  .form__flex-container {
+    display: block;
+  }
+}
 .form-flexbox-left {
-  width: 55%;
+  max-width: 55%;
+}
+@media (max-width: 991px) {
+  .form-flexbox-left {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .form-flexbox-left {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 .form-flexbox-right {
   width: 43%;
+}
+@media (max-width: 991px) {
+  .form-flexbox-right {
+    width: 100%;
+  }
 }
 .form-title {
   font-weight: 600;
@@ -1662,6 +1704,11 @@ body.noscroll {
   line-height: 25px;
   color: #606060;
   margin-bottom: 35px;
+}
+@media (max-width: 479px) {
+  .form-title {
+    font-size: 20px;
+  }
 }
 .form-info-text {
   font-family: "Montserrat";
@@ -1672,11 +1719,26 @@ body.noscroll {
   color: #606060;
   max-width: 232px;
 }
+@media (max-width: 767px) {
+  .form-info-text {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 479px) {
+  .form-info-text {
+    font-size: 16px;
+  }
+}
 .form-info__contain {
   display: flex;
   margin-bottom: 25px;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .form-info__contain {
+    display: block;
+  }
 }
 .form .info-contain {
   margin-bottom: 15px;
@@ -1685,17 +1747,33 @@ body.noscroll {
   margin-right: 24px;
 }
 .form .info__input-text {
-  width: 360px;
+  width: 360%;
+  width: 100%;
   height: 66px;
   border: 1px solid #E4E5E4;
   font-size: 18px;
   padding-left: 10px;
+}
+@media (max-width: 991px) {
+  .form .info__input-text {
+    width: 290px;
+  }
+}
+@media (max-width: 767px) {
+  .form .info__input-text {
+    width: 100%;
+  }
 }
 .form-info__radio {
   display: flex;
   justify-content: start;
   align-items: center;
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .form-info__radio {
+    display: block;
+  }
 }
 .form .info__input-radio {
   margin-right: 10px;
@@ -1745,4 +1823,32 @@ body.noscroll {
 .form-button img {
   margin-top: 7px;
   margin-left: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  white-space: nowrap;
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+.table-container {
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+th {
+  text-align: start;
+}
+
+.table-img img {
+  max-width: 130px;
 }

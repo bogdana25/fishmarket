@@ -7,57 +7,37 @@
             <div class="basket__shop-card-subtitle">В корзине <span>1 товаров</span> на сумму <span>43 400 р.</span>
             </div>
             <div class="basket__shop-card-table">
-               <div class="basket__flex-container">
-                  <div class="basket__flexbox">
-                     <div class="basket__shop-card-name basket__shop-card-name-i">Изображение</div>
-                     <div class="basket__shop-card-name">Название</div>
+               <div class="table-container">
+                  <div class="table-wrap">
+                     <table>
+                        <thead>
+                           <tr>
+                              <th>Изображение</th>
+                              <th>Название</th>
+                              <th>Кол-во</th>
+                              <th>Цена за штуку</th>
+                           </tr>
+                        </thead>
                   </div>
-
-                  <div class="basket__flexbox">
-                     <div class="basket__shop-card-name">Кол-во</div>
-                     <div class="basket__shop-card-name basket__shop-card-name-a">Цена за штуку</div>
-                  </div>
-               </div>
-
-               <!-- <div class="basket__flexbox">
-                     <div class="basket__shop-card-name">Изображение</div>
-                     <div class="basket__product-img basket__product-description">
-                        <img src="img/motor.png" alt="">
-                     </div>
-                  </div>
-
-                  <div class="basket__flexbox">
-                     <div class="basket__shop-card-name">Название</div>
-                     <div class="basket__product-text basket__product-description">Лодочный мотор HIDEA (Хайди) HD 9.9
-                        FHS
-                     </div>
-                  </div>
-
-                  <div class="basket__flexbox">
-                     <div class="basket__shop-card-name">Кол-во</div>
-                     <div class="basket__product-amount basket__product-description">1</div>
-                  </div>
-
-                  <div class="basket__flexbox">
-                     <div class="basket__shop-card-name">Цена за штуку</div>
-                     <div class="basket__product-price basket__product-description">43 400 р.</div>
-                  </div>
-               </div> -->
-            </div>
-            <div class="basket__product">
-               <div class="basket__product-flex-container">
-                  <div class="basket__product-img basket__product-description">
-                     <img src="img/motor.png" alt="">
-                  </div>
-                  <div class="basket__product-text basket__product-description">Лодочный мотор HIDEA (Хайди) HD 9.9 FHS
-                  </div>
-                  <div class="basket__product-amount basket__product-description">1</div>
-                  <div class="basket__product-price basket__product-description">43 400 р.</div>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <div class="table-img"><img src="img/motor.png" alt=""></div>
+                        </td>
+                        <td class="nowrap">Лодочный мотор HIDEA (Хайди) HD
+                           9.9
+                           FHS</td>
+                        <td><input type="number" value="1"></td>
+                        <td>43 400 р</td>
+                     </tr>
+                  </tbody>
+                  </table>
                </div>
             </div>
             <div class="basket__total">Итого: 43 400 р.</div>
          </div>
       </div>
+   </div>
    </div>
 </section>
 <section class="form">
@@ -154,7 +134,7 @@
 
 
                   <div class="form-payment__info">
-                     <div class="form-payment__title form-title">Способ доставки:</div>
+                     <div class="form-payment__title form-title">Способ оплаты:</div>
                      <div class="form-payment__info-contain info-contain">
                         <input type="radio" id="post-office" class="form-payment__info-input form-info__input"
                            name="method-payment" value="post-office"><label class="form-info-text form-info-txt"
