@@ -158,3 +158,23 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+
+let menu_items = document.querySelectorAll('.navbar-burger__links > li');
+menu_items.forEach((item) => {
+   let ul = item.querySelector('ul');
+   if (ul) {
+      item.classList.add('has_submenu');
+      let icon_down = document.createElement('i');
+      icon_down.classList.add('icon-down-open-mini', 'collapse');
+      item.insertBefore(icon_down, ul);
+   }
+})
+let collapse = document.querySelectorAll('.collapse');
+collapse.forEach((item) => {
+   item.addEventListener('click', function () {
+      this.classList.toggle("in");
+      this.parentElement.querySelector("ul").classList.toggle("opened");
+   })
+})

@@ -73,14 +73,14 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Bold.eot");
-  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular.eot");
-  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -224,16 +224,11 @@ body.noscroll {
   left: 0;
   width: 50%;
   height: 100%;
-  padding: 15px 65px;
   background: rgba(255, 255, 255, 0.8980392157);
   transform: translateX(-100%);
   transition: transform 0.5s;
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  padding-top: 106px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 50px 0 0;
   z-index: 150;
 }
 .navbar-burger__menu.active {
@@ -377,17 +372,46 @@ body.noscroll {
   text-shadow: 1px 1px 8px #dae0e3;
 }
 
+.collapse {
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .collapse {
+    display: none;
+  }
+}
+.collapse.in {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+  .has_submenu ul {
+    display: none;
+  }
+  .has_submenu ul.opened {
+    display: block;
+  }
+}
+
+.navbar-burger__wrap {
+  overflow: auto;
+  padding: 0 65px;
+}
+
+.navbar-burger__links {
+  height: 100%;
+}
+
 .close {
   display: none;
 }
 .close.active {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100000000;
+  top: 30px;
+  right: 40px;
+  z-index: 100;
   cursor: pointer;
-  padding: 25px 35px 0 0;
 }
 
 .open {
@@ -697,14 +721,35 @@ body.noscroll {
   flex-wrap: wrap;
 }
 .new__text-flexbox {
-  max-width: 229px;
+  max-width: calc(25% - 20px);
   width: 100%;
   margin-bottom: 34px;
+  margin-right: 20px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .new__text-flexbox {
+    max-width: calc(30% - 20px);
+  }
+}
+@media (max-width: 767px) {
+  .new__text-flexbox {
+    max-width: calc(40% - 20px);
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .new__text-flexbox {
+    max-width: calc(60% - 20px);
+  }
+}
+@media (max-width: 379px) {
+  .new__text-flexbox {
+    max-width: 80%;
+  }
 }
 .new__text-img {
   background: #50626C;
   margin-bottom: 30px;
-  margin-right: 20px;
   padding: 50px 35px;
 }
 .new__text-img img {
@@ -792,10 +837,10 @@ body.noscroll {
   text-shadow: 1px 2px 2px #688290;
 }
 .new__text-btn {
-  display: inline-block;
+  display: block;
   background: #50626C;
   text-align: center;
-  padding: 0 78px;
+  width: 100%;
 }
 .new__text-btn span {
   font-family: "Montserrat";
@@ -839,7 +884,10 @@ body.noscroll {
 }
 
 .image-slider__image img {
+  max-height: 222px;
+  max-width: 366px;
   width: 100%;
+  border-radius: 15px;
 }
 
 .swiper-arrows {
@@ -1056,7 +1104,7 @@ body.noscroll {
 }
 
 .reviews {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .reviews__title {
   font-weight: 600;
@@ -1064,12 +1112,12 @@ body.noscroll {
   line-height: 1;
   /* identical to box height, or 58% */
   color: #363636;
-  margin-bottom: 104px;
+  margin-bottom: 94px;
 }
 @media (max-width: 479px) {
   .reviews__title {
     font-size: 30px;
-    margin-bottom: 64px;
+    margin-bottom: 54px;
   }
 }
 .reviews__flex-container {
@@ -1081,13 +1129,13 @@ body.noscroll {
   background: #fff;
   max-width: 373px;
   text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin: 20px;
+  padding: 20px;
 }
 .reviews__card:hover {
   transition: 0.5s;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.35);
 }
 @media (max-width: 767px) {
   .reviews__card {
@@ -1137,6 +1185,9 @@ body.noscroll {
   /* identical to box height, or 227% */
   color: #50626C;
 }
+.reviews .reviews-slider {
+  padding: 10px 0;
+}
 
 .subscription {
   padding-bottom: 114px;
@@ -1147,6 +1198,15 @@ body.noscroll {
     padding-bottom: 50px;
   }
 }
+.subscription__container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .subscription__container {
+    max-width: 100%;
+  }
+}
 .subscription__flex-container {
   display: flex;
   align-items: center;
@@ -1154,11 +1214,12 @@ body.noscroll {
 }
 @media (max-width: 991px) {
   .subscription__flex-container {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
   }
 }
 .subscription .subscription-form {
+  max-width: 440px;
   padding: 45px 25px 48px 25px;
   background: #FFFFFF;
   border: 1px solid #E4E5E4;
@@ -1188,7 +1249,7 @@ body.noscroll {
 .subscription-form__name {
   margin-bottom: 21px;
   border: 1px solid #E4E5E4;
-  width: 437px;
+  width: 100%;
   height: 73px;
   font-size: 26px;
   padding-left: 10px;
@@ -1217,7 +1278,7 @@ body.noscroll {
 .subscription-form__email {
   margin-bottom: 38px;
   border: 1px solid #E4E5E4;
-  width: 437px;
+  width: 100%;
   height: 73px;
   font-size: 26px;
   padding-left: 10px;
@@ -1641,6 +1702,11 @@ body.noscroll {
   }
 }
 
+table th {
+  white-space: nowrap;
+  padding: 30px 10px;
+}
+
 .form {
   margin-top: 40px;
   margin-bottom: 66px;
@@ -1681,7 +1747,7 @@ body.noscroll {
   }
 }
 .form-flexbox-left {
-  max-width: 55%;
+  width: calc(57% - 15px);
 }
 @media (max-width: 991px) {
   .form-flexbox-left {
@@ -1752,7 +1818,7 @@ body.noscroll {
   margin-right: 24px;
 }
 .form .info__input-text {
-  width: 360%;
+  max-width: 360px;
   width: 100%;
   height: 66px;
   border: 1px solid #E4E5E4;
