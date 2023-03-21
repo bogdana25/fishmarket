@@ -73,7 +73,7 @@ var connectTabs = new Tabs();
 
 
 // Свайпер / Swiper
-//  Категории / Kategori
+//  Категории /category
 
 new Swiper('.image-slider', {
    slidesPerView: 3,
@@ -109,7 +109,7 @@ new Swiper('.image-slider', {
 // Свайпер / Swiper 2
 //  REVIEWS
 
-new Swiper('.rewiews-slider', {
+new Swiper('.reviews-slider', {
    slidesPerView: 3,
    spaceBetween: 20,
    loop: true,
